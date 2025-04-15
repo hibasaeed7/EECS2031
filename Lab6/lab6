@@ -1,0 +1,146 @@
+/***************************************
+* EECS2031 – Lab06 *
+* Author: Saeed, Hiba *
+* EECS/Prism username: hiba77 *
+* Yorku Student #: 219506864 *
+* Email: hiba77@my.yorku.ca *
+****************************************/
+
+
+1. cp /eecs/dept/course/2019-20/W/2030tmp/xxx .
+2. ls
+3. cp /eecs/dept/course/2019-20/W/2030tmp/xFile* .
+4. ls xFile*
+5. cp xxx xxx2
+6. mv xxx xFile1
+7. ls
+8. mkdir -p 2031unix/lab6a
+9. ls -R 2031unix
+10. mv xFile1 2031unix/lab6a/
+11. mv xFile2 xFile3 2031unix/lab6a/
+12. ls -l -R 2031unix
+13. cd 2031unix
+    pwd
+14. ls -l lab6a
+    ls -ld lab6a
+15. cp -r 2031unix/lab6a 2031unix/lab6b
+16. ls -l *
+17. cp xxx2 2031unix/lab6a/
+18. rmdir 2031unix/lab6a
+19. echo $?
+20. rm -r 2031unix/lab6a
+21. echo $?
+    ls lab6a
+22. cp xxx2 lab6a
+23. rm xxx2
+    rmdir 2031unix/lab6a
+24. mv lab6b/xFile1 .
+25. find –name "xFile*" 
+26. mv lab6b lab6working
+27. cd lab6working
+    pwd
+28. mv ../xFile1 .
+29. ls -l
+30. cat
+	Hi
+	Hi
+	There
+	There
+	^D (press Ctrl and D)
+31. cat > temp
+	Hi
+	There
+	^D (press Ctrl and D)
+	ls -l
+	Cat temp
+32. rm temp
+33. cat xFile1
+34. cat xFile2 xFile2 XFile3
+35. wc -l xFile1
+36. head -n 2 xFile1
+37. tail -n 3 xFile2
+38. cmp xFile1 xFile2
+	echo $?
+39. diff xFile1 xFile2
+	echo $?
+40. diff xFile2 xFile3
+	echo $?
+41. cmp xFile2 xFile3
+	echo $?
+42. cat xFile1 xFile2 xFile3 > xFile123
+ 	cat xFile123
+43. sort xFile123
+44. sort xFile123 | uniq
+45. sort xFile123 | uniq > xFile123compact
+46. at xFile123compact 
+47. chmod u-r xFile1
+	ls -l xFile1
+48. chmod 775 xFile1
+	ls -l xFile1
+49. chmod g-w,o+rw xFile1
+	ls -l xFile1
+50. echo "this is a xxx new line" >> xFile1
+	cat xFile1
+51. chmod u-w xFile1
+	cat xFile1
+52. cp /eecs/dept/course/2019-20/W/2030tmp/Hello.html ~/www/
+	ls -ld ~/www
+	chmod o+rx ~/www
+	nano ~/www/Hello.html
+	<h1>Hello, Hiba Saeed!</h1>
+	chmod o+r ~/www/Hello.html
+	ls -l ~/www/Hello.html
+	http://www.eecs.yorku.ca/~abcd/Hello.html
+	chmod o-r ~/www/Hello.html
+53. ls -lt
+    ls -ltr
+54. ls -lS
+    ls -lSr
+55. sort -k3 xFile123compact
+56. sort -k3n xFile123compact
+57. sort -k4 xFile123compact
+    sort -k4r xFile123compact
+58. sort -k 5 xFile123compact
+59. sort -k5,5 -M xFile123compact
+60. egrep 2 xFile123compact
+61. awk '$3 == 2' xFile123compact
+62. egrep '195.' xFile123compact
+63. egrep '195.' xFile123compact | wc -l
+    cp /eecs/dept/course/2019-20/W/2030tmp/22Fclasslist .
+64. wc -l 22Fclasslist
+65. grep "Saeed" 22Fclasslist
+66. egrep Li 22Fclasslist
+    egrep “\bLi\b” 22Fclasslist
+67. grep "Wong" 22Fclasslist | wc -l
+    grep "Wong" 22Fclasslist 
+68. grep "Liu" 22Fclasslist | wc -l
+    grep  “Liu" 22Fclasslist
+69. grep "Wang" 22Fclasslist | wc -l 
+70. awk -F'\t' '$3 == "Chen" || $3 == "Chan"' 22Fclasslist
+    awk -F'\t' '$3 == "Liu" || $3 == "Lau"' 22Fclasslist
+    awk -F'\t' '$3 == "Wang" || $3 == "Wong"' 22Fclasslist
+    awk -F'\t' '$3 == "Chang" || $3 == "Zhang"' 22Fclasslist
+    awk -F'\t' '$3 == "Zhu" || $3 == "Zhou"' 22Fclasslist
+    awk -F'\t' '$3 == "Gu" || $3 == "Guo"' 22Fclasslist
+71. cut -f 1 22Fclasslist
+    cut -f 3 22Fclasslist
+    cut -f 1-3 22Fclasslist 
+    cut -f 1,3 22Fclasslist 
+    cut -f 3,4 22Fclasslist > tmp
+    cat tmp
+    cat 22Fclasslist | sort -k 3 | cut -f 3,4
+72. grep "the" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+73. grep -w "the" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+​​74. grep -vw "the" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+75. grep -E "[0-9]" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+76. grep "1980" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+77. grep "1980$" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+78. grep "sea" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+79. grep "^sea" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+80. grep -E "^\wnd" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+81. grep -E "[ABCD]" /eecs/dept/course/2019-20/W/2030tmp/lyrics
+
+
+
+
+

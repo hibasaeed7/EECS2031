@@ -1,0 +1,18 @@
+Original inputs:   a:3     b:5     c:6   
+Rearranged inputs: a:106   b:10    c:3   
+
+Original inputs:   a:2     b:67    c:-1  
+Rearranged inputs: a:99    b:134   c:2   
+
+Original inputs:   a:-12   b:45    c:66  
+Rearranged inputs: a:166   b:90    c:-12 
+
+Original inputs:   a:66    b:55    c:1404
+Rearranged inputs: a:1504  b:110   c:66  
+
+Original inputs:   a:22    b:3     c:412 
+Rearranged inputs: a:512   b:6     c:22  
+
+Original inputs:   a:-2    b:44    c:6   
+Rearranged inputs: a:106   b:88    c:-2  
+

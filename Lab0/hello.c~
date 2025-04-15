@@ -1,0 +1,32 @@
+/* 24F - Lab0 *
+* Author: Saeed, Hiba *
+* EECS/Prism username: hiba77 *
+* Yorku Student #: 219506864 *
+* Email: hiba77@my.yorku.ca *
+****************************************/
+
+#include <stdio.h>
+
+float doub(float i);
+float triple(float i);
+
+int main()
+{  
+   	int a;
+	printf("Please enter an integer number:");
+	scanf("%f",a);
+	
+	printf("Hi, you entered %f. Double and triple of %f is %f and %f, 		respectively.",a,a,doub(a),triple(a);
+
+}
+
+/* function definition */
+float doub(float i){
+   return 2*i;             
+}
+
+/* function definition */
+float triple(float i){
+   return 3*i;             
+}
+
